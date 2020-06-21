@@ -11,7 +11,7 @@ html {
 
     @include respond(tab-land) {  //< 1200
         font-size: 56.25%;  //1rem = 9px, 9 : 16 = 56.25%
-
+        
         }
 
     @include respond(tab-port) { //width < 900
@@ -31,4 +31,9 @@ body {
     @include respond(tab-port) {
         padding: 0;  
         }
+    }
+    
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
 }
